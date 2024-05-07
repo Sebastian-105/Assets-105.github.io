@@ -132,8 +132,10 @@
     function d(a) {
       var b = 1;
       return (
-        h(document.body, "mousedown", function () {
-          b = -b;
+        h(document.body, "mousedown" , function () {
+          if (event.keyCode === 32) {
+            // Add your code here to handle the event
+        }
         }),
         function () {
           var c = 0;
